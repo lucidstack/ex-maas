@@ -1,20 +1,30 @@
-# Maas
+# `ex-maas` - A wrapper for the Mars Atmospheric Weather System API
 
-**TODO: Add description**
+This package (and module) is a thin wrapper around the MAAS (Mars Atmospheric
+Aggregation System) API.
+
+The API consists of two endpoints, `latest/0`, and
+`archive/1`, which (quite obviously) return the latest weather report, and a
+paginated list of old weather reports.
+
+For more information, visit [the MAAS website](http://marsweather.ingenology.com/).
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed as:
+The usual stuff! Add `maas` to the `deps` in your `mix.exs`:
+```elixir
+def deps do
+  [{:maas, "~> 0.0.1"}]
+end
+```
+and to your applications:
+```elixir
+def application do
+  [applications: [:maas]]
+end
+```
+and you should be good to go! 🚀
 
-  1. Add maas to your list of dependencies in `mix.exs`:
+## Usage
 
-        def deps do
-          [{:maas, "~> 0.0.1"}]
-        end
-
-  2. Ensure maas is started before your application:
-
-        def application do
-          [applications: [:maas]]
-        end
-
+[Head to the hexdocs, captain! 🖖🏼](https://hexdocs.pm/maas/)
