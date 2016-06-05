@@ -14,7 +14,7 @@ For more information, visit [the MAAS website](http://marsweather.ingenology.com
 The usual stuff! Add `maas` to the `deps` in your `mix.exs`:
 ```elixir
 def deps do
-  [{:maas, "~> 0.0.1"}]
+  [{:maas, "~> 1.0.0"}]
 end
 ```
 and to your applications:
